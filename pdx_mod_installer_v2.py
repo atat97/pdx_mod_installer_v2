@@ -1,10 +1,3 @@
-#TODO
-"""
-skypt do modów v2
-- wybierasz folder z archiwami
-"""
-#TODO
-
 from operator import mod
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
@@ -13,9 +6,6 @@ import sys
 from pathlib import Path
 import os
 import zipfile
-
-#Get user dir for mod path:
-
 
 #GUI
 class App(QWidget):
@@ -62,8 +52,11 @@ class App(QWidget):
         button_stell.setAccessibleName('Imperator')
         button_ck3.move(10, 360)
         button_ck3.clicked.connect(self.on_click)
+        #TODO: Display default mod path and add an option to change it
 
         #mod_zip_path = 
+
+        #TODO: Display the progress of unpacking in a text window
 
         self.show()
 
